@@ -1,0 +1,96 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+
+
+.carre {
+    width: 250px;
+    height: 250px;
+    background-color: black;
+    margin-top: 18px;
+    transition: all 1s;
+    transform: rotate(0deg);
+    animation-name: tournetourne;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.carre1 {
+    width: 250px;
+    height: 250px;
+    background-color: #f1af33;
+    margin-top: 18px;
+    transition: all 1s;
+    transform: rotate(0deg);
+    animation-name: tournetourne;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+#red:target {
+    border: 5px solid skyblue;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 9%;
+    width: 100%;
+    margin-top:2%;
+    
+}
+
+.container1{
+    background-color:gray;
+    width: 800px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    gap: 9%;
+    margin-top:2%;
+    transition: all 1s;
+    transform: rotate(0deg);
+    animation-name: tournetourne;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.carreclick {
+    width: 250px;
+    height: 250px;
+    background-color: rgb(255, 140, 0);
+    margin-top: 18px;
+    transition: all 1s;
+    transform: rotate(0deg);
+    animation-name: tournetournedelautrecote;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    border: 5px solid skyblue;
+
+}
+
+@keyframes tournetourne {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(180deg)
+    }
+  }
+
+@keyframes tournetournedelautrecote {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(-180deg)
+    }
+  }
+
+
+
+
