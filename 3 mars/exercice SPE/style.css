@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container { 
+    display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+padding-top:10%;
+z-index: 5;
+}
+
+.premier {
+    margin-bottom: 30px;
+    font-size:17px;
+}
+h1 {
+    margin-bottom: 15px;
+    font-size:50px;
+}
+
+.deuxieme {
+    margin-bottom: 45px;
+    font-size:19px;
+}
+
+button {
+    background-color: #dd2476;
+    border: none;
+    width: 250px;
+    height: 60px;
+    color: white;
+    font-size:25px;
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+
+button:hover {
+    border: 1px solid #dd2476;
+    background-color:white;
+    color: #dd2476;
+}
+/* ----------------------animation---------------------- */
+
+.battlefront{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30%;
+}
+.catapulte {
+    display: grid;
+    gap: 50%;
+}
+.ptc {
+    width: 25px;
+    height: 25px;
+    background-color:#dd247780;
+    border-radius: 3px;
+    z-index: 0;
+}
+
+.cm {
+    width: 75px;
+    height: 75px;
+    background-color:#dd247780;
+    border-radius: 5px;
+    
+    z-index: 1;
+}
+
+.gc {
+    width: 150px;
+    height: 150px;
+    background-color:#dd247780;
+    border-radius: 7px;
+    z-index: 2;
+}
+
+.first {
+    transform: rotate(0deg);
+    animation-name: tournetourne;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+}
+.first1 {
+    transform: rotate(0deg);
+    animation-name: tournetourne;
+    animation-duration: 75s;
+    animation-iteration-count: infinite;
+}
+.first2 {
+    transform: rotate(0deg);
+    animation-name: tournetourne;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+}
+
+.second {
+    transform: rotate(0deg);
+    animation-name: tournetourne;
+    animation-duration: 80s;
+    animation-iteration-count: infinite;
+}
+.second1 {
+    transform: rotate(0deg);
+    animation-name: tournetourne;
+    animation-duration: 95s;
+    animation-iteration-count: infinite;
+}
+.second2 {
+    transform: rotate(0deg);
+    animation-name: tournetourne;
+    animation-duration: 70s;
+    animation-iteration-count: infinite;
+}
+
+.third {
+    transform: rotate(0deg);
+    animation-name: tournetourne;
+    animation-duration: 100s;
+    animation-iteration-count: infinite;
+}
+.third1 {
+    transform: rotate(0deg);
+    animation-name: tournetourne;
+    animation-duration: 115s;
+    animation-iteration-count: infinite;
+}
+.third2 {
+    transform: rotate(0deg);
+    animation-name: tournetourne;
+    animation-duration: 90s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes tournetourne {
+    0% {
+      transform: rotate(0deg);
+      
+    }
+  
+    100% {
+      transform:  translateY(-1400px) rotate(180deg);
+        border-radius:  40%;
+    }
+  }
